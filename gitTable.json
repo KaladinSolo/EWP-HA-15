@@ -1,0 +1,29 @@
+{
+    "gitTable" : [
+        {
+            "command" : "git clone",
+            "example" : "git clone https://github.com/suchmaske/EWP-HA-15",
+            "description" : "This command clones the contents of the given directory into the working directory."
+        },
+		{
+            "command" : "git add",
+            "example" : "git add index.html",
+            "description" : "This command adds files to the list for committing, before saving changes."
+        },
+		{
+            "command" : "git commit",
+            "example" : "git commit -m \"I changed stuff\"",
+            "description" : "This command creates a new commit, resp. saves the changes to the files previously added."
+        },
+		{
+            "command" : "git push",
+            "example" : "git push origin master",
+            "description" : "This command uploads the committed changes to the central repository."
+        },
+		{
+            "command" : "git pull",
+            "example" : "git pull",
+            "description" : "This command updates the lokal clone with changes committed to the central repository."
+        }		
+    ]
+}

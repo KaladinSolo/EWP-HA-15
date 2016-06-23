@@ -1,0 +1,21 @@
+#movies {
+	border: 2px solid black;
+}
+
+#movies th {
+	border-right: 1px solid #dddddd;
+}
+
+.tooltipster-sidetip .tooltipster-box .tooltipster-content{
+	background: #ffffff;
+	color: #000000;
+}
+
+#text {
+	width: 300px;
+	background: #d32727;
+	color: #ffb829;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
