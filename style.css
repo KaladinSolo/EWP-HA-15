@@ -1,9 +1,20 @@
-#movies {
-	border: 2px solid black;
+#workflow {
+	width: 75%;
+	background: #2C57B2;
+	color: #ffffff;
+	padding: 20px;	
+	margin: 40px;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 
-#movies th {
-	border-right: 1px solid #dddddd;
+.gitCommand {
+	color: #000000;
+	white-space:nowrap;
+}
+
+.gitCommand:hover {
+	color: #ffffff;
 }
 
 .tooltipster-sidetip .tooltipster-box .tooltipster-content{
@@ -11,11 +22,16 @@
 	color: #000000;
 }
 
-#text {
-	width: 300px;
-	background: #d32727;
-	color: #ffb829;
-	padding: 5px;
+#logo {
+	width: 200px;
+	hight: 200px;
 	border-radius: 5px;
-	border: 1px solid black;
+}
+
+#gitTable {
+	border: 2px solid black;
+}
+
+#gitTable th {
+	border-right: 1px solid #dddddd;
 }

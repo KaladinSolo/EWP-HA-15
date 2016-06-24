@@ -22,7 +22,7 @@
         },
 		{
             "command" : "git pull",
-            "example" : "git pull",
+            "example" : "git pull --rebase origin",
             "description" : "This command updates the lokal clone with changes committed to the central repository."
         }		
     ]

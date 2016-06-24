@@ -3,13 +3,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="Claus Wehder - wehdercl[at]hu-berlin.de">
-		<link rel="stylesheet" href="node_modules/datatables/media/css/jquery.dataTables.min.css">
-		<link rel="stylesheet" href="node_modules/tooltipster/css/jquery.tooltipster.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
 		<link rel="stylesheet" href="style.css">
 		<title>EWP HA 15</title>
 	</head>
 	<body>
-	
+		<div id="workflow">
+			<a href="https://github.com/KaladinSolo/EWP-HA-15"><img id="logo" src="GitHub-Mark.png"></a>
+			<h3>The git-worklow</h3>
+			<p>
+				When working collaboratively on a project, using git, there are some essential steps to be followed.</br>
+				First one has to create a lokal 'clone' of the 'master'-folder. The master is normally stored in an online repository. Cloning the master with the command <span class="gitCommand" id="gitClone">'git clone'</span> creates a local copy of the folder, holding the project files.</br>
+				After manipulating the local files in any manner, there are three steps to be taken, if the changes are to be uploaded into the repository. Using the command <span class="gitCommand" id="gitAdd">'git add'</span>, while specifying one or more files, those files will be marked, to be part of the next commitment to the server. To add all files in the working directory, the command <span class="gitCommand" id="gitAdd2">'git add *.*'</span> can be used.</br>
+				To actually create a new commitment the command <span class="gitCommand" id="gitCommit">'git commit'</span> is used. With that, all files formerly added will be saved as the latest commitment. That can now be uploaded to the repository with the command <span class="gitCommand" id="gitPush">'git push'</span>. The master on the repository will be updated with the changes and the name of the committing colleague will be saved in the change-log.</br>
+				If one wants to download the latest changes from the repository instead, the command <span class="gitCommand" id="gitPull">'git pull'</span> will synchronize the local clone to match the master.
+			</p>
+			Refer to the table below for quick-references to the commands.
+		</div>
 		<table id="gitTable" class="cell-border compact hover stripe">
 			<thead>
 				<tr>
@@ -19,11 +30,17 @@
 				</tr>
 			</thead>
 		</table>
+		
+		<div id="gitCloneText">git clone https://github.com/suchmaske/EWP-HA-15</div>
+		<div id="gitAddText">git add index.html</div>
+		<div id="gitAdd2Text">git add *.html</div>
+		<div id="gitCommitText">git commit -m "I changed stuff"</div>
+		<div id="gitPushText">git push origin master</div>
+		<div id="gitPullText">git pull --rebase origin</div>
 
-	<!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
-		<script src="node_modules/tooltipster/js/jquery.tooltipster.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>

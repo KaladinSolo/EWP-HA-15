@@ -14,10 +14,30 @@ $("#gitTable").DataTable({
 	"bLengthChange": false,
 	"bPaginate": false,
 	"order": [
-		[ 1, "asc" ]
+		[ 0, "asc" ]
 	]
 });
 
-$("#fav").tooltipster({
-    "content": $("#content").detach()
+$("#gitClone").tooltipster({
+    "content": $("#gitCloneText").detach(),
+});
+
+$("#gitAdd").tooltipster({
+    "content": $("#gitAddText").detach(),
+});
+
+$("#gitAdd2").tooltipster({
+    "content": $("#gitAdd2Text").detach(),
+});
+
+$("#gitCommit").tooltipster({
+    "content": $("#gitCommitText").detach(),
+});
+
+$("#gitPush").tooltipster({
+    "content": $("#gitPushText").detach(),
+});
+
+$("#gitPull").tooltipster({
+    "content": $("#gitPullText").detach(),
 });
